@@ -1,13 +1,16 @@
 package com.application.app2
 import android.content.Intent
+import android.icu.util.Calendar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.format.DateFormat
 import android.view.ViewGroup
 import android.widget.*
 
 //import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.Button
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +20,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 //        OnClickTime()
+//        val date: Date = Date()
+//        val test1: String = DateFormat.format("yyyy/MM/dd kk:mm:ss", date).toString()
+//println(date)
 
         val btnIntent = findViewById<Button>(R.id.btn_intent)
         btnIntent.setOnClickListener (object : View.OnClickListener {
@@ -25,7 +31,9 @@ class MainActivity : AppCompatActivity() {
                 startActivity(intent)
             }
 
+
         })}}
+
 
 
 
